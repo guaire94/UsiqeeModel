@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EEE485F626315851004D8632 /* UsiqeeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE485F426315851004D8632 /* UsiqeeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEE485FF26315993004D8632 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE485FE26315993004D8632 /* Admin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE485F126315851004D8632 /* UsiqeeModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UsiqeeModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE485F426315851004D8632 /* UsiqeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsiqeeModel.h; sourceTree = "<group>"; };
 		EEE485F526315851004D8632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE485FE26315993004D8632 /* Admin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		EEE485F326315851004D8632 /* UsiqeeModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEE485FD2631596C004D8632 /* Model */,
 				EEE485F426315851004D8632 /* UsiqeeModel.h */,
 				EEE485F526315851004D8632 /* Info.plist */,
 			);
 			path = UsiqeeModel;
+			sourceTree = "<group>";
+		};
+		EEE485FD2631596C004D8632 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEE485FE26315993004D8632 /* Admin.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					EEE485F026315851004D8632 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE485FF26315993004D8632 /* Admin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		EEE485FA26315851004D8632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7NN3754HR3;
@@ -277,6 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.usiqeeModel.app.UsiqeeModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +300,7 @@
 		EEE485FB26315851004D8632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7NN3754HR3;
